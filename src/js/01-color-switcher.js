@@ -2,7 +2,6 @@ const refs = {
     body: document.querySelector('body'),
     buttonStart: document.querySelector("[data-start]"),
     buttonStop: document.querySelector("[data-stop]")
-    // buttonReload: document.querySelector("[data-reload]")
 };
 let stopRandomColor = null;
 hideButtonStop()
