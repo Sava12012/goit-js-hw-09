@@ -74,7 +74,7 @@ class Timer {
         stop()
       }
 
-    }, 1000);
+    }, 500);
   }
 
   stop() {
