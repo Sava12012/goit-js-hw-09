@@ -29,13 +29,13 @@ function onCreatePromises(e) {
   }
 
   let { amount, step, delay } = dataParams;
+  refs.form.reset();
 
   for (let i = 1; i <= amount; i += 1) {
+    createPromise(i, delay).then(onSuccess).catch(onError); 
     delay += step;
-    createPromise(i, delay).then(onSuccess).catch(onError);
-
-    refs.form.reset();
   }
+  
 }
 
 function onError({ position, delay }) {
